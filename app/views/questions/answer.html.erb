@@ -1,0 +1,13 @@
+<h1 class="mt-3">Stupid Coaching</h1>
+
+<div class="question padding-left">
+  <%= tag.p @question%>
+  <p class="italic">- You</p>
+</div>
+
+<div class="answer padding-left">
+  <%= tag.p @answer, class:"bold" %>
+  <p class="text-capitalize italic">- Your coach</p>
+</div>
+
+<%= link_to "Ask a new question", ask_path, class:'btn btn-primary margin' %>
